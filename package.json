@@ -1,0 +1,45 @@
+{
+  "name": "ts-template",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/whitecolor/ts-template.git"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "main": "index.js",
+  "files": [
+    "**/*.js",
+    "**/*.d.ts"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc",
+    "test": "ts-node -T --prefer-ts-exts node_modules/mocha/bin/mocha test test/*.test.ts",
+    "test-dev": "ts-node-dev -T --prefer-ts-exts --respawn node_modules/mocha/bin/mocha test/*.test.ts",
+    "lint": "tslint -p .",
+    "prepublish": "lint && build && clean",
+    "clean": "ts-clean-built --old && trash  **/*.log"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pnpm clean"
+    }
+  },
+  "author": "whitecolor",
+  "devDependencies": {
+    "@types/mocha": "^8.0.0",
+    "husky": "^4.2.5",
+    "mocha": "^8.0.1",
+    "prettier": "^2.0.5",
+    "trash": "^6.1.1",
+    "ts-clean-built": "^1.2.1",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  },
+  "license": "MIT"
+}
