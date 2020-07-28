@@ -1,13 +1,25 @@
-devDependencies:
-  '@types/mocha': 8.0.0
-  husky: 4.2.5
-  mocha: 8.0.1
-  prettier: 2.0.5
-  trash: 6.1.1
-  ts-clean-built: 1.2.1
-  ts-node: 8.10.2_typescript@3.9.7
-  ts-node-dev: 1.0.0-pre.56_typescript@3.9.7
-  typescript: 3.9.7
+importers:
+  .:
+    devDependencies:
+      '@types/mocha': github.com/whitecolor/mocha-types/da22474cf43f48a56c86f8c23a5a0ea36e295768
+      husky: 4.2.5
+      mocha: 8.0.1
+      prettier: 2.0.5
+      trash: 6.1.1
+      ts-clean-built: 1.2.1
+      ts-node: 8.10.2_typescript@3.9.7
+      ts-node-dev: 1.0.0-pre.56_typescript@3.9.7
+      typescript: 3.9.7
+    specifiers:
+      '@types/mocha': 'github:whitecolor/mocha-types'
+      husky: ^4.2.5
+      mocha: ^8.0.1
+      prettier: ^2.0.5
+      trash: ^6.1.1
+      ts-clean-built: ^1.2.1
+      ts-node: ^8.10.2
+      ts-node-dev: ^1.0.0-pre.56
+      typescript: ^3.9.7
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -87,10 +99,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
-  /@types/mocha/8.0.0:
-    dev: true
-    resolution:
-      integrity: sha512-jWeYcTo3sCH/rMgsdYXDTO85GNRyTCII5dayMIu/ZO4zbEot1E3iNGaOwpLReLUHjeNQFkgeNNVYlY4dX6azQQ==
   /@types/node/14.0.26:
     dev: true
     resolution:
@@ -1961,13 +1969,9 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
-specifiers:
-  '@types/mocha': ^8.0.0
-  husky: ^4.2.5
-  mocha: ^8.0.1
-  prettier: ^2.0.5
-  trash: ^6.1.1
-  ts-clean-built: ^1.2.1
-  ts-node: ^8.10.2
-  ts-node-dev: ^1.0.0-pre.56
-  typescript: ^3.9.7
+  github.com/whitecolor/mocha-types/da22474cf43f48a56c86f8c23a5a0ea36e295768:
+    dev: true
+    name: '@types/mocha'
+    resolution:
+      tarball: 'https://codeload.github.com/whitecolor/mocha-types/tar.gz/da22474cf43f48a56c86f8c23a5a0ea36e295768'
+    version: 8.0.0

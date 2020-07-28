@@ -33,7 +33,7 @@
   },
   "author": "whitecolor",
   "devDependencies": {
-    "@types/mocha": "^8.0.0",
+    "@types/mocha": "github:whitecolor/mocha-types",
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
