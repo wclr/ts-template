@@ -13,7 +13,8 @@
   "main": "index.js",
   "files": [
     "**/*.js",
-    "**/*.d.ts"
+    "**/*.d.ts",
+    "!test"
   ],
   "scripts": {
     "tsc": "tsc",
@@ -21,8 +22,9 @@
     "test": "ts-node -T --prefer-ts-exts node_modules/mocha/bin/mocha test test/*.test.ts",
     "test-dev": "ts-node-dev -T --prefer-ts-exts --respawn node_modules/mocha/bin/mocha test/*.test.ts",
     "lint": "tslint -p .",
-    "prepublish": "lint && build && clean",
-    "clean": "ts-clean-built --old && trash  **/*.log"
+    "clean": "ts-clean-built --old && trash  **/*.log",
+    "preinstall": "pnpx only-allow pnpm",
+    "publish": "lint && build && clean"
   },
   "husky": {
     "hooks": {
