@@ -7,9 +7,12 @@ importers:
       prettier: 2.0.5
       trash: 6.1.1
       ts-clean-built: 1.2.1
-      ts-node: 8.10.2_typescript@3.9.7
-      ts-node-dev: 1.0.0-pre.56_typescript@3.9.7
-      typescript: 3.9.7
+      ts-node: 8.10.2_typescript@4.0.0-dev.20200729
+      ts-node-dev: 1.0.0-pre.56_typescript@4.0.0-dev.20200729
+      tslint: 6.1.2_typescript@4.0.0-dev.20200729
+      tslint-config-prettier: 1.18.0
+      typescript: 4.0.0-dev.20200729
+      typescript-tslint-plugin: 0.5.5
     specifiers:
       '@types/mocha': 'github:whitecolor/mocha-types'
       husky: ^4.2.5
@@ -19,7 +22,10 @@ importers:
       ts-clean-built: ^1.2.1
       ts-node: ^8.10.2
       ts-node-dev: ^1.0.0-pre.56
-      typescript: ^3.9.7
+      tslint: ^6.1.2
+      tslint-config-prettier: ^1.18.0
+      typescript: ^4.0.0-dev.20200729
+      typescript-tslint-plugin: ^0.5.5
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.10.4:
@@ -248,6 +254,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
+  /builtin-modules/1.1.1:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-Jw8HbFpywC9bZaR9+Uxf46J4iS8=
   /callsites/3.1.0:
     dev: true
     engines:
@@ -366,6 +378,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
+  /commander/2.20.3:
+    dev: true
+    resolution:
+      integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
   /compare-versions/3.6.0:
     dev: true
     resolution:
@@ -649,6 +665,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==
+  /get-caller-file/1.0.3:
+    dev: true
+    resolution:
+      integrity: sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
   /get-caller-file/2.0.5:
     dev: true
     engines:
@@ -961,6 +981,14 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+  /js-yaml/3.14.0:
+    dependencies:
+      argparse: 1.0.10
+      esprima: 4.0.1
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
   /json-parse-better-errors/1.0.2:
     dev: true
     resolution:
@@ -1095,6 +1123,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
+  /mkdirp/0.5.5:
+    dependencies:
+      minimist: 1.2.5
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-NKmAlESf6jMGym1++R0Ra7wvhV+wFW63FaSOFPwRahvea0gMUcGUhVeAg/0BC0wiv9ih5NYPB1Wn1UEI1/L+xQ==
   /mkdirp/1.0.4:
     dev: true
     engines:
@@ -1135,6 +1170,15 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-vefaXfdYI8+Yo8nPZQQi0QO2o+5q9UIMX1jZ1XMmK3+4+CQjc7+B0hPdUeglXiTlr8IHMVRo63IhO9Mzt6fxOg==
+  /mock-require/3.0.3:
+    dependencies:
+      get-caller-file: 1.0.3
+      normalize-path: 2.1.1
+    dev: true
+    engines:
+      node: '>=4.3.0'
+    resolution:
+      integrity: sha512-lLzfLHcyc10MKQnNUCv7dMcoY/2Qxd6wJfbqCcVk3LDb8An4hF6ohk5AztrvgKhJCqj36uyzi/p5se+tvyD+Wg==
   /mount-point/3.0.0:
     dependencies:
       '@sindresorhus/df': 1.0.1
@@ -1172,6 +1216,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==
+  /normalize-path/2.1.1:
+    dependencies:
+      remove-trailing-separator: 1.1.0
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-GrKLVW4Zg2Oowab35vogE3/mrtk=
   /normalize-path/3.0.0:
     dev: true
     engines:
@@ -1474,6 +1526,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-z5Fqsf1fHxbfsggi3W7H9zDCr94=
+  /remove-trailing-separator/1.1.0:
+    dev: true
+    resolution:
+      integrity: sha1-wkvOKig62tW8P1jg1IJJuSN52O8=
   /repeating/2.0.1:
     dependencies:
       is-finite: 1.1.0
@@ -1765,7 +1821,7 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-rocLAv0mA94xIKlUXFAK495z6RNq95FJ3OrZwYTLO9JLz5BSndnTeZ2PBZJ9Mkp2WHy9+xzHlwLqpEOHfKl3dw==
-  /ts-node-dev/1.0.0-pre.56_typescript@3.9.7:
+  /ts-node-dev/1.0.0-pre.56_typescript@4.0.0-dev.20200729:
     dependencies:
       chokidar: 3.4.1
       dateformat: 1.0.12
@@ -1776,9 +1832,9 @@ packages:
       rimraf: 2.7.1
       source-map-support: 0.5.19
       tree-kill: 1.2.2
-      ts-node: 8.10.2_typescript@3.9.7
+      ts-node: 8.10.2_typescript@4.0.0-dev.20200729
       tsconfig: 7.0.0
-      typescript: 3.9.7
+      typescript: 4.0.0-dev.20200729
     dev: true
     engines:
       node: '>=0.8.0'
@@ -1791,13 +1847,13 @@ packages:
         optional: true
     resolution:
       integrity: sha512-+2a3FAShOja+W5X6ZxKgf1PG3kOOkHCiYzSu6s3lwhLVxeMBusJudcv7W6cZKOTp7+L7hPkKW97t1CGw7bCDaA==
-  /ts-node/8.10.2_typescript@3.9.7:
+  /ts-node/8.10.2_typescript@4.0.0-dev.20200729:
     dependencies:
       arg: 4.1.3
       diff: 4.0.2
       make-error: 1.3.6
       source-map-support: 0.5.19
-      typescript: 3.9.7
+      typescript: 4.0.0-dev.20200729
       yn: 3.1.1
     dev: true
     engines:
@@ -1816,13 +1872,66 @@ packages:
     dev: true
     resolution:
       integrity: sha512-vZXmzPrL+EmC4T/4rVlT2jNVMWCi/O4DIiSj3UHg1OE5kCKbk4mfrXc6dZksLgRM/TZlKnousKH9bbTazUWRRw==
-  /typescript/3.9.7:
+  /tslib/1.13.0:
+    dev: true
+    resolution:
+      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
+  /tslint-config-prettier/1.18.0:
+    dev: true
+    engines:
+      node: '>=4.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-xPw9PgNPLG3iKRxmK7DWr+Ea/SzrvfHtjFt5LBl61gk2UBG/DB9kCXRjv+xyIU1rUtnayLeMUVJBcMX8Z17nDg==
+  /tslint/6.1.2_typescript@4.0.0-dev.20200729:
+    dependencies:
+      '@babel/code-frame': 7.10.4
+      builtin-modules: 1.1.1
+      chalk: 2.4.2
+      commander: 2.20.3
+      diff: 4.0.2
+      glob: 7.1.6
+      js-yaml: 3.14.0
+      minimatch: 3.0.4
+      mkdirp: 0.5.5
+      resolve: 1.17.0
+      semver: 5.7.1
+      tslib: 1.13.0
+      tsutils: 2.29.0_typescript@4.0.0-dev.20200729
+      typescript: 4.0.0-dev.20200729
+    deprecated: 'TSLint has been deprecated in favor of ESLint. Please see https://github.com/palantir/tslint/issues/4534 for more information.'
+    dev: true
+    engines:
+      node: '>=4.8.0'
+    hasBin: true
+    peerDependencies:
+      typescript: '>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev'
+    resolution:
+      integrity: sha512-UyNrLdK3E0fQG/xWNqAFAC5ugtFyPO4JJR1KyyfQAyzR8W0fTRrC91A8Wej4BntFzcvETdCSDa/4PnNYJQLYiA==
+  /tsutils/2.29.0_typescript@4.0.0-dev.20200729:
+    dependencies:
+      tslib: 1.13.0
+      typescript: 4.0.0-dev.20200729
+    dev: true
+    peerDependencies:
+      typescript: '>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev'
+    resolution:
+      integrity: sha512-g5JVHCIJwzfISaXpXE1qvNalca5Jwob6FjI4AoPlqMusJ6ftFE7IkkFoMhVLRgK+4Kx3gkzb8UZK5t5yTTvEmA==
+  /typescript-tslint-plugin/0.5.5:
+    dependencies:
+      minimatch: 3.0.4
+      mock-require: 3.0.3
+      vscode-languageserver: 5.2.1
+    dev: true
+    resolution:
+      integrity: sha512-tR5igNQP+6FhxaPJYRlUBVsEl0n5cSuXRbg7L1y80mL4B1jUHb8uiIcbQBJ9zWyypJEdFYFUccpXxvMwZR8+AA==
+  /typescript/4.0.0-dev.20200729:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+      integrity: sha512-jzPalday93NlFVuRkY7Vixd7I9dLKoefoB2dvIhoqWaAGc5WPbOQmCHOilEGPSXNd9gb+uy97RH6+EwM/cf1gQ==
   /user-home/2.0.0:
     dependencies:
       os-homedir: 1.0.2
@@ -1843,6 +1952,35 @@ packages:
     dev: true
     resolution:
       integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==
+  /vscode-jsonrpc/4.0.0:
+    dev: true
+    engines:
+      node: '>=8.0.0 || >=10.0.0'
+    resolution:
+      integrity: sha512-perEnXQdQOJMTDFNv+UF3h1Y0z4iSiaN9jIlb0OqIYgosPCZGYh/MCUlkFtV2668PL69lRDO32hmvL2yiidUYg==
+  /vscode-languageserver-protocol/3.14.1:
+    dependencies:
+      vscode-jsonrpc: 4.0.0
+      vscode-languageserver-types: 3.14.0
+    dev: true
+    resolution:
+      integrity: sha512-IL66BLb2g20uIKog5Y2dQ0IiigW0XKrvmWiOvc0yXw80z3tMEzEnHjaGAb3ENuU7MnQqgnYJ1Cl2l9RvNgDi4g==
+  /vscode-languageserver-types/3.14.0:
+    dev: true
+    resolution:
+      integrity: sha512-lTmS6AlAlMHOvPQemVwo3CezxBp0sNB95KNPkqp3Nxd5VFEnuG1ByM0zlRWos0zjO3ZWtkvhal0COgiV1xIA4A==
+  /vscode-languageserver/5.2.1:
+    dependencies:
+      vscode-languageserver-protocol: 3.14.1
+      vscode-uri: 1.0.8
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-GuayqdKZqAwwaCUjDvMTAVRPJOp/SLON3mJ07eGsx/Iq9HjRymhKWztX41rISqDKhHVVyFM+IywICyZDla6U3A==
+  /vscode-uri/1.0.8:
+    dev: true
+    resolution:
+      integrity: sha512-obtSWTlbJ+a+TFRYGaUumtVwb+InIUVI0Lu0VBUAPmj2cU5JutEXg3xUE0c2J5Tcy7h2DEKVJBFi+Y9ZSFzzPQ==
   /which-module/2.0.0:
     dev: true
     resolution:
@@ -1973,5 +2111,6 @@ packages:
     dev: true
     name: '@types/mocha'
     resolution:
+      registry: 'https://registry.npmjs.org/'
       tarball: 'https://codeload.github.com/whitecolor/mocha-types/tar.gz/da22474cf43f48a56c86f8c23a5a0ea36e295768'
     version: 8.0.0

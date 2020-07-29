@@ -17,8 +17,7 @@
     "!test"
   ],
   "scripts": {
-    "tsc": "tsc",
-    "build": "tsc",
+    "build": "tsc -p tsconfig-build",
     "test": "ts-node -T --prefer-ts-exts node_modules/mocha/bin/mocha test test/*.test.ts",
     "test-dev": "ts-node-dev -T --prefer-ts-exts --respawn node_modules/mocha/bin/mocha test/*.test.ts",
     "lint": "tslint -p .",
@@ -41,7 +40,10 @@
     "ts-clean-built": "^1.2.1",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.56",
-    "typescript": "^3.9.7"
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.0.0-dev.20200729",
+    "typescript-tslint-plugin": "^0.5.5"
   },
   "license": "MIT"
 }

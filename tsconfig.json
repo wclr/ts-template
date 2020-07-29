@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "noEmit": true,
     "lib": ["dom", "es6"],
     "esModuleInterop": true,
     "declaration": true,

@@ -2,6 +2,7 @@
   "extends": ["tslint-config-prettier"],
   "rules": {
     "no-floating-promises": true,
-    "no-unused-expression": true
+    "no-promise-as-boolean": true,
+    "no-unused-expression": [true, "allow-fast-null-checks"]
   }
 }
