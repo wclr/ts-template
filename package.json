@@ -22,6 +22,7 @@
     "test-dev": "ts-node-dev -T --prefer-ts-exts --respawn node_modules/mocha/bin/mocha test/*.test.ts",
     "lint": "tslint -p .",
     "clean": "ts-clean-built --old && trash  **/*.log",
+    "remove-node-modules": "del-cli **/node_modules/**",
     "preinstall": "pnpx only-allow pnpm",
     "publish": "lint && build && clean"
   },
@@ -33,6 +34,7 @@
   "author": "whitecolor",
   "devDependencies": {
     "@types/mocha": "github:whitecolor/mocha-types",
+    "del": "^5.1.0",
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
