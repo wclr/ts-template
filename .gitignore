@@ -9,3 +9,4 @@ node_modules
 *.log*
 
 !.cz-config.js
+!pnpmfile.js
