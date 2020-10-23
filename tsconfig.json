@@ -11,13 +11,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "preserveConstEnums": true,
-    "newLine": "LF",
-    "plugins": [
-      {
-        "name": "typescript-tslint-plugin",
-        "alwaysShowRuleFailuresAsWarnings": true
-      }
-    ]
+    "newLine": "LF"
   },
   "formatCodeOptions": {
     "indentSize": 2,

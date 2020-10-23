@@ -34,18 +34,18 @@
   "author": "whitecolor",
   "devDependencies": {
     "@types/mocha": "github:whitecolor/mocha-types",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@whitecolor/eslint-config": "^1.0.0",
     "del": "^5.1.0",
+    "eslint": "^7.11.0",
     "husky": "^4.2.5",
     "mocha": "^8.0.1",
     "prettier": "^2.0.5",
     "trash": "^6.1.1",
     "ts-clean-built": "^1.2.1",
     "ts-node": "^8.10.2",
-    "ts-node-dev": "^1.0.0-pre.56",
-    "tslint": "^6.1.2",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.0.0-dev.20200729",
-    "typescript-tslint-plugin": "^0.5.5"
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.3"
   },
   "license": "MIT"
 }
