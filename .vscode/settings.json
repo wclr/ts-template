@@ -8,9 +8,8 @@
     "**/*.js.map": true,
     "**/*.d.ts": true
   },
-  // "tslint.run": "onSave",
-  // "tslint.autoFixOnSave": true,
-  //"editor.formatOnType": true,
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true
 }

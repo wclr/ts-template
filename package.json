@@ -20,7 +20,7 @@
     "build": "tsc -p tsconfig-build",
     "test": "ts-node -T --prefer-ts-exts node_modules/mocha/bin/mocha test test/*.test.ts",
     "test-dev": "ts-node-dev -T --prefer-ts-exts --respawn node_modules/mocha/bin/mocha test/*.test.ts",
-    "lint": "tslint -p .",
+    "lint": "eslint -p .",
     "clean": "ts-clean-built --old && trash  **/*.log",
     "remove-node-modules": "del-cli **/node_modules/**",
     "preinstall": "pnpx only-allow pnpm",
@@ -34,18 +34,18 @@
   "author": "whitecolor",
   "devDependencies": {
     "@types/mocha": "github:whitecolor/mocha-types",
-    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@whitecolor/eslint-config": "^1.0.0",
-    "del": "^5.1.0",
-    "eslint": "^7.11.0",
-    "husky": "^4.2.5",
-    "mocha": "^8.0.1",
-    "prettier": "^2.0.5",
-    "trash": "^6.1.1",
+    "del": "^6.0.0",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.6",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1",
+    "trash": "^7.0.0",
     "ts-clean-built": "^1.2.1",
-    "ts-node": "^8.10.2",
-    "ts-node-dev": "^1.0.0",
-    "typescript": "^4.0.3"
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
   },
   "license": "MIT"
 }
